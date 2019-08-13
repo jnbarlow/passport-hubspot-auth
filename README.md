@@ -89,21 +89,22 @@ app.get( '/auth/hubspot/callback',
 }));
 ```
 
-#### What you will get in profile response ?
+#### Profile Response
 
 ```
-   provider         always set to `hubspot`
-   hub_id
-   hub_domain
-   user
-   user_id
-   app_id
-   expires_in
+profile { 
+    token: '<access token>',
+    user: '<hubspot username>',
+    hub_domain: '<hubspot instance>',
+    scopes: [ <array of scopes> ],
+    hub_id: ########,
+    app_id: ######,
+    expires_in: #####, //seconds from now
+    user_id: ########,
+    token_type: 'access',
+provider: 'hubspot' 
+}
 ```
-
-## Examples
-
-For a complete, working example, refer to the [OAuth 2.0 example](example).
 
 ## Credits
   
