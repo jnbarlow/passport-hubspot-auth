@@ -1,3 +1,5 @@
+[![CircleCI](https://circleci.com/gh/jnbarlow/passport-hubspot-auth.svg?style=shield)](https://circleci.com/gh/jnbarlow/passport-hubspot-auth)
+
 # Passport-Hubspot-OAuth2
 
 [Passport](http://passportjs.org/) strategies for authenticating with [Hubspot](http://www.hubspot.com/)
