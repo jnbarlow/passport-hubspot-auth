@@ -1,6 +1,6 @@
 [![CircleCI](https://circleci.com/gh/jnbarlow/passport-hubspot-auth.svg?style=shield)](https://circleci.com/gh/jnbarlow/passport-hubspot-auth)
 
-# Passport-Hubspot-OAuth2
+# Passport-Hubspot-Auth
 
 [Passport](http://passportjs.org/) strategies for authenticating with [Hubspot](http://www.hubspot.com/)
 using OAuth 2.0.
@@ -25,7 +25,7 @@ accepts these credentials and calls `done` providing a user, as well as
 `options` specifying a client ID, client secret, and callback URL.
 
 ```Javascript
-var HubSpotStrategy = require( 'passport-hubspot-oauth2' ).Strategy;
+var HubSpotStrategy = require( 'passport-hubspot-auth' ).Strategy;
 
 passport.use(new HubSpotStrategy({
     clientID:     HUBSPOT_CLIENT_ID,
@@ -38,6 +38,37 @@ passport.use(new HubSpotStrategy({
   }
 ));
 ```
+Conversely, if you don't want the request to be available, omit `passReqToCallback` or set it to false
+
+```Javascript
+var HubSpotStrategy = require( 'passport-hubspot-auth' ).Strategy;
+
+passport.use(new HubSpotStrategy({
+    clientID:     HUBSPOT_CLIENT_ID,
+    clientSecret: HUBSPOT_CLIENT_SECRET,
+    callbackURL: "http://yourdomain:3000/auth/hubspot/callback",
+    passReqToCallback   : false
+  },
+  function(accessToken, refreshToken, profile, done) {
+    // Information is sent back here.
+  }
+));
+```
+
+```Javascript
+var HubSpotStrategy = require( 'passport-hubspot-auth' ).Strategy;
+
+passport.use(new HubSpotStrategy({
+    clientID:     HUBSPOT_CLIENT_ID,
+    clientSecret: HUBSPOT_CLIENT_SECRET,
+    callbackURL: "http://yourdomain:3000/auth/hubspot/callback",
+  },
+  function(accessToken, refreshToken, profile, done) {
+    // Information is sent back here.
+  }
+));
+```
+
 #### Authenticate Requests
 
 Use `passport.authenticate()`, specifying the `'hubspot'` strategy, to
