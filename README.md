@@ -102,7 +102,7 @@ profile {
     expires_in: #####, //seconds from now
     user_id: ########,
     token_type: 'access',
-provider: 'hubspot' 
+    provider: 'hubspot' 
 }
 ```
 
