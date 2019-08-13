@@ -1,0 +1,35 @@
+{
+  "name": "passport-hubspot-auth",
+  "version": "1.0.0",
+  "description": "Passport strategy for authenticating with Hubspot.",
+  "main": "./lib/passport-hubspot-oauth",
+  "scripts": {
+    "test": "node_modules/.bin/mocha test/*-test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jnbarlow/passport-hubspot-auth.git"
+  },
+  "keywords": [
+    "hubspot",
+    "passport",
+    "auth",
+    "authentication",
+    "nodejs"
+  ],
+  "author": "John Barlow",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jnbarlow/passport-hubspot-auth/issues"
+  },
+  "homepage": "https://github.com/jnbarlow/passport-hubspot-auth#readme",
+  "devDependencies": {
+    "mocha": "^4.0.1",
+    "should": "~2.0.2",
+    "underscore": "~1.5.2"
+  },
+  "dependencies": {
+    "passport-oauth": "~1.0.0",
+    "pkginfo": "0.2.x"
+  }
+}
