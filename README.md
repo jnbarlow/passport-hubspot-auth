@@ -24,7 +24,7 @@ account and OAuth 2.0 tokens.  The strategy requires a `verify` callback, which
 accepts these credentials and calls `done` providing a user, as well as
 `options` specifying a client ID, client secret, and callback URL.
 
-```Javascript
+```javascript
 var HubSpotStrategy = require( 'passport-hubspot-auth' ).Strategy;
 
 passport.use(new HubSpotStrategy({
@@ -40,7 +40,7 @@ passport.use(new HubSpotStrategy({
 ```
 Conversely, if you don't want the request to be available, omit `passReqToCallback` or set it to false
 
-```Javascript
+```javascript
 var HubSpotStrategy = require( 'passport-hubspot-auth' ).Strategy;
 
 passport.use(new HubSpotStrategy({
@@ -55,7 +55,7 @@ passport.use(new HubSpotStrategy({
 ));
 ```
 
-```Javascript
+```javascript
 var HubSpotStrategy = require( 'passport-hubspot-auth' ).Strategy;
 
 passport.use(new HubSpotStrategy({
@@ -77,7 +77,7 @@ authenticate requests.
 For example, as route middleware in an [Express](http://expressjs.com/)
 application:
 
-```Javascript
+```javascript
 app.get('/auth/hubspot',
   passport.authenticate('google', { scope: 'contacts content' }
 ));
