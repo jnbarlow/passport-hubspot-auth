@@ -13,7 +13,7 @@ unobtrusively integrated into any application or framework that supports
 
 ## Install
 
-    $ npm install passport-hubspot-oauth2
+    $ npm install passport-hubspot-auth
 
 ## Usage of OAuth 2.0
 
