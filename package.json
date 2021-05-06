@@ -26,7 +26,7 @@
   "devDependencies": {
     "mocha": "^6.2.0",
     "should": "~13.2.3",
-    "underscore": "~1.9.1"
+    "underscore": "~1.12.1"
   },
   "dependencies": {
     "passport-oauth": "~1.0.0",
