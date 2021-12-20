@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jnbarlow/passport-hubspot-auth.git"
+    "url": "git+https://github.com/docket-hq/passport-hubspot-auth.git"
   },
   "keywords": [
     "hubspot",
@@ -17,12 +17,14 @@
     "authentication",
     "nodejs"
   ],
-  "author": "John Barlow",
+  "contributors": [
+    "John Barlow <jnbarlow@gmail.com>"
+  ],
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/jnbarlow/passport-hubspot-auth/issues"
+    "url": "https://github.com/docket-hq/passport-hubspot-auth/issues"
   },
-  "homepage": "https://github.com/jnbarlow/passport-hubspot-auth#readme",
+  "homepage": "https://github.com/docket-hq/passport-hubspot-auth#readme",
   "devDependencies": {
     "mocha": "^6.2.0",
     "should": "~13.2.3",
